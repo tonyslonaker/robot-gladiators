@@ -7,6 +7,25 @@ var randomNumber = function(min, max) {
   return value;
 };
 
+//function to set name
+var getPlayerName = function() {
+  var name = "";
+  
+var playerInfo = {
+  name: getPlayerName(),
+}
+
+  //***************************************
+  //ADD LOOP HERE WITH PROMPT AND CONDITION
+  //*************************************** 
+
+  while (name === "" || name === null) {
+    name = prompt("What is your robot's name?");
+  }
+
+  console.log("Your robot's name is " + name);
+  return name;
+};
 // fight function (now with parameter for enemy's object holding name, health, and attack values)
 var fight = function(enemy) {
   while (playerInfo.health > 0 && enemy.health > 0) {
